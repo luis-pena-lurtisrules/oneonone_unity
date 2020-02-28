@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: HardAttack
   m_EditorClassIdentifier: 
   Name: Hard
-  HitChance: 0.75
+  HitChance: 0.25
   MinDam: 10
   MaxDam: 35
-  Energy: 10
+  Energy: 25
   Visual: {fileID: 11400000, guid: 4abb50c2ef1e7464d90763d3e34aa10a, type: 2}

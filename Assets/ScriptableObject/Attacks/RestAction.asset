@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1af6897f7f759f4438b241f37493f8a8, type: 3}
-  m_Name: SoftAttack
+  m_Name: RestAction
   m_EditorClassIdentifier: 
-  Name: Soft
-  HitChance: 0.55
-  MinDam: 2
-  MaxDam: 10
-  Energy: 15
+  Name: Rest
+  HitChance: 1
+  MinDam: 0
+  MaxDam: 0
+  Energy: -20
   Visual: {fileID: 11400000, guid: 4abb50c2ef1e7464d90763d3e34aa10a, type: 2}
