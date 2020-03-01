@@ -24,9 +24,11 @@ public class GameLogic : MonoBehaviour
     
     public void ChangeTurn()
     {
-        GameState.CurrentPlayer = PlayerList.Players[_count];
-        ChangeTurnEvent.Raise(PlayerList.Players[_count]);
+        var next = _count;
         _count = (_count + 1) % 2;
+        GameState.CurrentPlayer = PlayerList.Players[next];
+        ChangeTurnEvent.Raise(PlayerList.Players[next]);
+        
 
     }
 
@@ -49,7 +51,7 @@ public class GameLogic : MonoBehaviour
         result.Attack = att;
         result.Energy = att.AttackMade.Energy;
 
-        if (att.Source.Energy > att.AttackMade.Energy && hitRoll <= att.AttackMade.HitChance)
+        if (att.Source.Energy >= att.AttackMade.Energy && hitRoll <= att.AttackMade.HitChance)
         {
             result.IsHit = true;
             
@@ -60,11 +62,12 @@ public class GameLogic : MonoBehaviour
             
         }
 
-        if (att.Source.Energy > att.AttackMade.Energy)
+        if (att.Source.Energy >= att.AttackMade.Energy)
         {
             att.Source.Energy -= result.Energy;
         }
 
+        Debug.Log($"With Result \n    {result}");
         AttackResult.Raise(result);
 
         ChangeTurn();

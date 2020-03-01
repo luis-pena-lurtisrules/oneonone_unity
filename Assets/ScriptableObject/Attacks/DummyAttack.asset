@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Dummy
   HitChance: 0.15
-  MinDam: 2
-  MaxDam: 5
+  MinDam: 1
+  MaxDam: 2
   Energy: 10
   Visual: {fileID: 11400000, guid: 4abb50c2ef1e7464d90763d3e34aa10a, type: 2}

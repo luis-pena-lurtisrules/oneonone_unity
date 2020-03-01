@@ -714,6 +714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 721225844}
   - component: {fileID: 721225843}
+  - component: {fileID: 721225845}
   m_Layer: 0
   m_Name: AIController
   m_TagString: Untagged
@@ -733,10 +734,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4616e1bb22d1b314385c2b1763133d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
-  Player: {fileID: 0}
-  GameState: {fileID: 0}
-  AttackEvent: {fileID: 0}
+  Body: {fileID: 440431657597136741}
+  GameState: {fileID: 11400000, guid: a841703fbd27b28448b694a9b62f749e, type: 2}
+  AttackEvent: {fileID: 11400000, guid: f7754349b4b62e44a887465c45d4dc0c, type: 2}
 --- !u!4 &721225844
 Transform:
   m_ObjectHideFlags: 0
@@ -751,6 +751,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &721225845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721225842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 285c98436f95b02429edbf6e314238da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 718f00ec7e201a640b16a642f99c0091, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 721225843}
+        m_MethodName: OnGameTurnChange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &742866707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,3 +1942,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28104e3b52721b6438c8f438e30f43ee, type: 3}
+--- !u!114 &440431657597136741 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5594093119381664398, guid: 28104e3b52721b6438c8f438e30f43ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 440431657597136740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53fde4c5ae84e874a8b2eb8b07f39f3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

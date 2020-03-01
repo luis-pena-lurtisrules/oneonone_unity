@@ -12,7 +12,7 @@ public class GameState : ScriptableObject, ISerializationCallbackReceiver
     public int TurnNumber;
     
     public PlayerInfo CurrentPlayer;
-
+    public PlayerList ListOfPlayers;
     public bool LeftPlayerIsHuman;
     public bool RightPlayerIsHuman;
 

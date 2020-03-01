@@ -8,4 +8,9 @@ public class AttackResult : ScriptableObject
     public bool IsHit;
     public int Damage;
     public int Energy;
+
+    public override string ToString()
+    {
+        return $"{Attack}: Result: {IsHit}, {Damage}, {Energy}";
+    }
 }

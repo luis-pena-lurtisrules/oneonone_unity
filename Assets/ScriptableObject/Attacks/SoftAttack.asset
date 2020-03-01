@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Soft
   HitChance: 0.55
-  MinDam: 2
-  MaxDam: 10
+  MinDam: 1
+  MaxDam: 4
   Energy: 15
   Visual: {fileID: 11400000, guid: 4abb50c2ef1e7464d90763d3e34aa10a, type: 2}
